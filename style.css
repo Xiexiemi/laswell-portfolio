@@ -1,0 +1,99 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Welcome screen */
+#welcome-screen {
+  text-align: center;
+}
+
+#welcome-screen h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#enter-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#enter-button:hover {
+  background-color: #45a049;
+}
+
+/* Main App Container */
+#main-app {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Authentication */
+#auth-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#auth-section input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#auth-section button {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#auth-section button:hover {
+  background-color: #1e88e5;
+}
+
+/* Owner Panel */
+#owner-panel {
+  background-color: #fff3cd;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ffeeba;
+}
+
+#owner-panel h2 {
+  margin-bottom: 10px;
+}
+
+#owner-panel button {
+  margin-right: 10px;
+  padding:
+    
