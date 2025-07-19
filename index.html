@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiran's Portfolio</title>
+  <divaylay rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="welcome-screen">
+    <h1>Welcome to Quiran's Portfolio</h1>
+    <button id="enter-button">Enter</button>
+  </div>
+  
+  <div id="main-app" style="display: none">
+    <div id="auth-section">
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="login-button">Login</button>
+      <button id="logout-button" style="display: none">Logout</button>
+    </div>
+
+    <div id="owner-panel" style="display: none">
+      <h2>Owner Panel</h2>
+      <button onclick="showLessonForm()">Add Lesson</button>
+      <button onclick="showReflectionForm()">Add Reflection</button>
+      <input type="file" id="uploadFile" accept=".json" />
+    </div>
+
+    <div id="content-area">
+      <h2>Lessons</h2>
+      <div id="lessons"></div>
+      <h2>Reflections</h2>
+      <div id="reflections"></div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
