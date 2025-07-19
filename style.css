@@ -1,99 +1,146 @@
-/* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+/* style.css */
 
 body {
-  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
   color: #333;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
 }
 
-/* Welcome screen */
 #welcome-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: white;
   text-align: center;
 }
 
 #welcome-screen h1 {
-  font-size: 2.5em;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
 #enter-button {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  background: white;
+  color: #ee0979;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 #enter-button:hover {
-  background-color: #45a049;
+  background: #f0f0f0;
 }
 
-/* Main App Container */
-#main-app {
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Authentication */
 #auth-section {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
   justify-content: center;
+  margin: 20px;
 }
 
 #auth-section input {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
 }
 
 #auth-section button {
-  padding: 10px 20px;
-  background-color: #2196F3;
-  border: none;
+  padding: 8px 12px;
+  background: #333;
   color: white;
-  border-radius: 6px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 #auth-section button:hover {
-  background-color: #1e88e5;
+  background: #555;
 }
 
-/* Owner Panel */
 #owner-panel {
-  background-color: #fff3cd;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #ffeeba;
-}
-
-#owner-panel h2 {
-  margin-bottom: 10px;
+  margin: 20px;
+  text-align: center;
 }
 
 #owner-panel button {
-  margin-right: 10px;
-  padding:
-    
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#owner-panel button:hover {
+  background-color: #218838;
+}
+
+#content-area {
+  padding: 20px;
+}
+
+#lessons, #reflections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.content-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.content-card h3 {
+  margin-top: 0;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment-section textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 5px;
+}
+
+.comment-section button {
+  margin-top: 5px;
+  padding: 6px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-section button:hover {
+  background: #0056b3;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: darkred;
+}
